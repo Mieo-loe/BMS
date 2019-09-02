@@ -6,10 +6,10 @@ function D(data) {
         html+='<tr>';
         html += "<td>"+ls.id+"</td>";
         html += "<td>"+ls.cashDate+"</td>";
+        html += "<td>"+ls.carId+"</td>";
+        html += "<td>"+ls.book.bookName+"</td>";
         html += "<td>"+ls.cashAmount+"</td>";
         html += "<td>"+ls.cashProfit+"</td>";
-        html += "<td>"+ls.book.bookName+"</td>";
-        html += "<td>"+ls.carId+"</td>";
         html+="<td>";
         html += "<a href='"+path+"/cash_record/recycle?id="+ls.id+"'><i class='ti-close'></i></a>";
         html+="</td>";
