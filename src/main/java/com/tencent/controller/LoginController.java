@@ -46,7 +46,7 @@ public class LoginController {
         ModelAndView modelAndView = new ModelAndView();
         HttpSession session=request.getSession();
         modelAndView.addObject("msg", "<font size=\"3px\" color=\"red\">密码错误，请重试</font>");
-        modelAndView.setViewName("forward:/changePassword.jsp");
+        modelAndView.setViewName("forward:/login.jsp");
         List<Staff> list = staffServiceImpl.selectAll();
         for (Staff staff : list) {
             if (staff.getStaffUsername().equals(username) && staff.getStaffPassword().equals(password)) {

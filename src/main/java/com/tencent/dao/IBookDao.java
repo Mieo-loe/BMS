@@ -13,7 +13,6 @@ import java.util.List;
 public
 interface IBookDao {
 
-
     /**
      * 把记录放入回收站
      *
@@ -51,7 +50,6 @@ interface IBookDao {
      */
     @Update("update book set bookCode=#{bookCode},bookName=#{bookName},bookCategory=#{bookCategory},bookNumber=#{bookNumber},bookPrice=#{bookPrice},bookDate=#{bookDate},sta_id=#{staId} where id=#{id}")
     void updateById(Book book);
-    /*                          查询                                           */
 
     /**
      * 查询所有书籍信息

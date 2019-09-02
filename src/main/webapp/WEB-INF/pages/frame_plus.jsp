@@ -53,7 +53,7 @@
             trigger: 'axis'
         },
         legend: {
-            data:['营业额','纯利润']
+            data:['纯利润','营业额']
         },
         grid: {
             left: '3%',
@@ -75,15 +75,16 @@
         },
         series: [
             {
-                name:'营业额',
+                name:'纯利润',
                 type:'line',
                 stack:'总量'
             },
             {
-                name:'纯利润',
+                name:'营业额',
                 type:'line',
                 stack:'总量'
             }
+
         ]
     };
 
@@ -107,8 +108,8 @@
                     option.series[1].data = [];
                     for (var i = 0; i < result.length; i++) {
                         option.xAxis.data.push(result[i].cashDate);
-                        option.series[0].data.push(result[i].cashAmount);
-                        option.series[1].data.push(result[i].cashProfit);
+                        option.series[1].data.push(result[i].cashAmount);
+                        option.series[0].data.push(result[i].cashProfit);
                     }
                 }
             },

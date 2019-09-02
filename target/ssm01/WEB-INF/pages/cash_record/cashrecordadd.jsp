@@ -16,12 +16,12 @@
                 </div>
                 <div>
                     <label for="booId_add">书本名称:</label>
-                    <input type="text" name="bookName" id="bookName_add" size="18" maxlength="15"/>
+                    <input type="text" name="bookName" readonly="readonly" id="bookName_add" size="18" maxlength="15"/>
                     <br />
                 </div>
                 <div>
                     <label for="carId_add">会员卡ID:</label>
-                    <input type="text" name="carId" id="carId_add" size="18" maxlength="15"  />
+                    <input type="text"  name="carId" id="carId_add" size="18" maxlength="15"  />
                     <br />
                 </div>
                 <div>

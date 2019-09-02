@@ -161,6 +161,9 @@ public class CashRecordController {
         BOOKID=id;
         Book book= bookServiceImpl.selectById(id);
         Map<String,Object> map1=new HashMap<>();
+        if (book.getBookName()==null){
+            book.setBookName("该图书不存在");
+        }
         map1.put("book", book);
         return map1;
     }

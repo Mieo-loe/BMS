@@ -4,7 +4,7 @@
         <form action="${pageContext.request.contextPath}/card/update" method="post" name="editForm" id="editForm">
             <fieldset>
                 <legend>会员卡编辑</legend>
-                <input id="id_edit" name="id">
+                <input id="id_edit" name="id" hidden="hidden">
                 <div>
                     <label for="createDate_edit">创建时间:</label>
                     <input type="text" name="createDate" id="createDate_edit"  size="18" maxlength="15"  />

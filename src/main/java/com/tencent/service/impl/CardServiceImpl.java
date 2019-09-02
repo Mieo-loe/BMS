@@ -55,6 +55,6 @@ public class CardServiceImpl  implements ICardService {
 
     @Override
     public Card selectById(Integer id) {
-        return null;
+        return cardDao.selectById(id);
     }
 }

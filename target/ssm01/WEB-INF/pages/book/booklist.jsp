@@ -103,7 +103,7 @@
                             <td>${b.bookDate}</td>
                             <td>${b.bookPrice}元</td>
                             <td>
-                                <a id="bookEdit" href="JavaScript:;" onclick="openEditDialog();"><i class="ti-pencil"></i></a>
+                                <a id="bookEdit" href="JavaScript:;" onclick="bookCheck(${b.id});openEditDialog();"><i class="ti-pencil"></i></a>
                                 <a id="bookDelete" href="${pageContext.request.contextPath}/book/recycle?id=${b.id}"  ><i class="ti-close"></i></a>
                             </td>
                         </tr>
